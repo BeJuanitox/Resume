@@ -1,4 +1,4 @@
-:root{
+:root {
   --bg: #E5E5E5;
   --clr-border: #E44D4D;
   --clr-border2: #737373;
@@ -18,7 +18,7 @@ body {
   align-items: center;
   margin-top: 50px;
 }
-  
+
 .picture {
   border-radius: 18px;
   border: 6px solid var(--clr-border2);
@@ -36,9 +36,9 @@ body {
 }
 
 .description {
-  text-align: center; 
-  margin-left: 10px;  
-  margin-right: 10px;     
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .title {
@@ -74,8 +74,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15)
-  , -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
   border-radius: 50%;
 }
 
@@ -87,11 +86,10 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column-reverse;
-  border-radius: 50%;  
-  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2)
-  , inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-  0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
-   0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
 }
 
 .percentage {
@@ -106,97 +104,80 @@ body {
   font-size: 25px;
 }
 
-.circleangular svg circle {
+.circleangular,.circlehtml,.circlecss,.circlejs,.circlec,.circlejava {
   fill: none;
-  stroke: red;
   stroke-width: 20px;
   stroke-dasharray: 450;
   stroke-dashoffset: 450;
+}
+
+.circleangular svg circle {
+  stroke: red;
   animation: animang 0.5s linear forwards;
 }
 
 .circlehtml svg circle {
-  fill: none;
   stroke: darkred;
-  stroke-width: 20px;
-  stroke-dasharray: 450;
-  stroke-dashoffset: 450;
   animation: animhtml 2s linear forwards;
 }
 
 .circlecss svg circle {
-  fill: none;
   stroke: blue;
-  stroke-width: 20px;
-  stroke-dasharray: 450;
-  stroke-dashoffset: 450;
   animation: animcss 2s linear forwards;
 }
 
 .circlejs svg circle {
-  fill: none;
   stroke: yellow;
-  stroke-width: 20px;
-  stroke-dasharray: 450;
-  stroke-dashoffset: 450;
   animation: animjs 2s linear forwards;
 }
 
 .circlec svg circle {
-  fill: none;
   stroke: darkblue;
-  stroke-width: 20px;
-  stroke-dasharray: 450;
-  stroke-dashoffset: 450;
   animation: animc 2s linear forwards;
-} 
+}
 
 .circlejava svg circle {
-  fill: none;
   stroke: #12A2E7;
-  stroke-width: 20px;
-  stroke-dasharray: 450;
-  stroke-dashoffset: 450;
   animation: animjava 2s linear forwards;
 }
 
 @keyframes animang {
-  100%{
+  100% {
     stroke-dashoffset: 427.5;
   }
 }
 
 @keyframes animhtml {
-  100%{
+  100% {
     stroke-dashoffset: 315;
   }
 }
 
 @keyframes animcss {
-  100%{
+  100% {
     stroke-dashoffset: 315;
   }
 }
 
 @keyframes animjs {
-  100%{
+  100% {
     stroke-dashoffset: 405;
   }
 }
 
 @keyframes animc {
-  100%{
+  100% {
     stroke-dashoffset: 225;
   }
-} 
+}
 
 @keyframes animjava {
-  100%{
+  100% {
     stroke-dashoffset: 337.5;
   }
 }
 
-svg{
+svg {
   position: absolute;
   left: 0;
   margin-top: -98.5%;
