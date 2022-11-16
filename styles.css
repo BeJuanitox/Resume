@@ -1,7 +1,8 @@
-:root{
+:root {
   --bg: #E5E5E5;
   --clr-border: #E44D4D;
   --clr-border2: #737373;
+  --bg-progress: #A6A6A8;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
   align-items: center;
   margin-top: 50px;
 }
-  
+
 .picture {
   border-radius: 18px;
   border: 6px solid var(--clr-border2);
@@ -31,9 +32,154 @@ body {
   border-radius: 18px;
   border: 6px solid var(--clr-border2);
   width: 550px;
-  margin-top: 50px;
+  margin: 50px auto;
 }
 
 .description {
-  text-align: center;        
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.progress {
+  height: 500px;
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.skill {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.outer {
+  height: 160px;
+  width: 160px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+
+.inner {
+  height: 80px;
+  width: 80px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+.percentage {
+  font-weight: 60;
+  color: #555;
+  font-size: 20px;
+}
+
+.lenguage {
+  font-weight: 600;
+  color: #555;
+  font-size: 25px;
+}
+
+.circleangular,.circlehtml,.circlecss,.circlejs,.circlec,.circlejava {
+  fill: none;
+  stroke-width: 20px;
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+}
+
+.circleangular svg circle {
+  stroke: red;
+  animation: animang 0.5s linear forwards;
+}
+
+.circlehtml svg circle {
+  stroke: darkred;
+  animation: animhtml 2s linear forwards;
+}
+
+.circlecss svg circle {
+  stroke: blue;
+  animation: animcss 2s linear forwards;
+}
+
+.circlejs svg circle {
+  stroke: yellow;
+  animation: animjs 2s linear forwards;
+}
+
+.circlec svg circle {
+  stroke: darkblue;
+  animation: animc 2s linear forwards;
+}
+
+.circlejava svg circle {
+  stroke: #12A2E7;
+  animation: animjava 2s linear forwards;
+}
+
+@keyframes animang {
+  100% {
+    stroke-dashoffset: 427.5;
+  }
+}
+
+@keyframes animhtml {
+  100% {
+    stroke-dashoffset: 315;
+  }
+}
+
+@keyframes animcss {
+  100% {
+    stroke-dashoffset: 315;
+  }
+}
+
+@keyframes animjs {
+  100% {
+    stroke-dashoffset: 405;
+  }
+}
+
+@keyframes animc {
+  100% {
+    stroke-dashoffset: 225;
+  }
+}
+
+@keyframes animjava {
+  100% {
+    stroke-dashoffset: 337.5;
+  }
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  margin-top: -98.5%;
+  rotate: -90deg;
 }
