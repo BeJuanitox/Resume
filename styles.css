@@ -185,7 +185,7 @@ svg {
   rotate: -90deg;
 }
 
-.bodycards {
+.projects {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -194,11 +194,6 @@ svg {
   margin: 20px auto;
   padding: 10px;
   margin-bottom: 150px;
-}
-
-.text-cards {
-  text-decoration: none;
-  color: inherit;
 }
 
 .card {
@@ -213,9 +208,7 @@ svg {
 }
 
 .card:hover {
-  color: black;
-  border: 4px solid gray;
-  transform: scale(1);
+  box-shadow: rgba(227, 16, 16, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .image {
@@ -236,13 +229,18 @@ svg {
 .links {
   display: flex;
   justify-content: space-between;
-}
-
-.urls {
   font-size: 28px;
 }
 
 .urls:hover {
   cursor: pointer;
   transform: scale(1.2);
+}
+
+.iconGit {
+  color: black;
+}
+
+.iconRedirect {
+  color: #006AFF;
 }
