@@ -202,7 +202,6 @@ svg {
   margin: 20px auto;
   border-radius: 10px;  
   padding: 10px;
-  transition: all 200ms;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   background-color: solid white;
 }
@@ -229,7 +228,6 @@ svg {
 .links {
   display: flex;
   justify-content: space-between;
-  font-size: 28px;
 }
 
 .urls:hover {
@@ -239,8 +237,50 @@ svg {
 
 .iconGit {
   color: black;
+  font-size: 28px;
 }
 
 .iconRedirect {
   color: #006AFF;
+  font-size: 25px;
+}
+
+.footer {
+  margin: 50px 500px 100px 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social {
+  border: 2px solid var(--clr-border2);
+  border-radius: 50px;
+}
+
+.itemSocial {
+  font-size: 50px;
+  margin: 20px;
+}
+
+.itemGh {
+  color: black;
+}
+
+.itemIg {
+  color: #C32AA3;
+}
+
+.itemCode {
+  color: black;
+}
+
+.itemTlg {
+  color: #2AB9F2;
+}
+
+.social:hover {
+  cursor: pointer;
+  transition: all 250ms;
+  transform: scale(1.2);
 }
