@@ -246,10 +246,7 @@ svg {
 }
 
 .footer {
-  margin: 50px auto;
-  margin-bottom: 100px;
-  margin-left: 500px;
-  margin-right: 500px;
+  margin: 50px 500px 100px 500px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -263,9 +260,7 @@ svg {
 
 .itemSocial {
   font-size: 50px;
-  margin: 20px auto;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px;
 }
 
 .itemGh {
