@@ -248,6 +248,8 @@ svg {
 .footer {
   margin: 50px auto;
   margin-bottom: 100px;
+  margin-left: 500px;
+  margin-right: 500px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
