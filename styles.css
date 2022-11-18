@@ -45,6 +45,7 @@ body {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 25px;
+  color: black;
 }
 
 .progress {
@@ -182,4 +183,64 @@ svg {
   left: 0;
   margin-top: -98.5%;
   rotate: -90deg;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  margin-bottom: 150px;
+}
+
+.card {
+  text-align: center;
+  width: 250px;
+  margin: 20px auto;
+  border-radius: 10px;  
+  padding: 10px;
+  transition: all 200ms;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: solid white;
+}
+
+.card:hover {
+  box-shadow: rgba(227, 16, 16, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.image {
+  width: 250px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.name {
+  margin: 5px auto;
+}
+
+.texts {
+  margin: 10px auto;
+  margin-bottom: 5px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 28px;
+}
+
+.urls:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.iconGit {
+  color: black;
+}
+
+.iconRedirect {
+  color: #006AFF;
 }

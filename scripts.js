@@ -50,7 +50,7 @@ setInterval(() => {
   if(counterc === 50){
     clearInterval;
   } else {
-    counter++;
+    counterc++;
     c.innerHTML = `${counterc}%`;
   }
   
