@@ -6,16 +6,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./images/Resume.ico">
   <title>Resume</title>
 </head>
 
 <body>
-  <section class="header">
-    <img class="picture" src="./images/Sebastian.jpg" alt="profile">
-    <h1 class="name">Sebastian Morales</h1>
-    <div class="about">
-      <h2 class="description">Welcome, I'm Sebastian Morales, I'm currently a student of Software Engineering, I seek to
-        improve more every day, I enjoy playing videogames, listening music and learning new things.</h2>
+  <header>
+    <img class="headerPicture" src="./images/Sebastian.jpg" alt="profile">
+    <h2 class="headerDescription">Fight for your dreams and try to be better every day.</h2>
+    <button onclick="redirectButton()">Look</button>
+  </header>
+  <section class="infoAbout" id="start">
+    <div class="profile">
+      <img class="picture" src="./images/Sebastian.jpg" alt="profile">
+      <h1 class="nameProfile">Sebastian Morales</h1>
+    </div>
+    <div class="descriptionProfile">
+      <h1 class="titleAbout">About me</h1>
+      <div class="about">
+        <h2 class="description">Welcome, I'm Sebastian Morales, I'm currently a student of Software Engineering, I seek
+          to improve more every day, I enjoy playing videogames, listening music and learning new things.</h2>
+      </div>
+    </div>
+    <div class="complement">
+      <img class="imgabout" src="./images/BrainBoard.png" alt="brain">
     </div>
   </section>
   <h1 class="title">Skills</h1>
@@ -204,21 +218,23 @@
       </div>
     </div>
   </div>
-  <h1 class="title">Contact me</h1>
-  <div class="footer">
-    <a class="social" href="https://github.com/BeJuanitox" target="_blank">
-      <i class="fa-brands fa-github itemSocial itemGh"></i>
-    </a>
-    <a class="social" href="https://www.instagram.com/sebastian_morales_99" target="_blank">
-      <i class="fa-brands fa-instagram itemSocial itemIg"></i>
-    </a>
-    <a class="social" href="https://codepen.io/BeJuanitox" target="_blank">
-      <i class="fa-brands fa-codepen itemSocial itemCode"></i>
-    </a>
-    <a class="social" href="https://t.me/BeJuanitox" target="_blank">
-      <i class="fa-brands fa-telegram itemSocial itemTlg"></i>
-    </a>
-  </div>
+  <footer>
+    <h1 class="titleContact">Contact me</h1>
+    <div class="footer">
+      <a class="social" href="https://github.com/BeJuanitox" target="_blank">
+        <i class="fa-brands fa-github itemSocial itemGh"></i>
+      </a>
+      <a class="social" href="https://www.instagram.com/sebastian_morales_99" target="_blank">
+        <i class="fa-brands fa-instagram itemSocial itemIg"></i>
+      </a>
+      <a class="social" href="https://codepen.io/BeJuanitox" target="_blank">
+        <i class="fa-brands fa-codepen itemSocial itemCode"></i>
+      </a>
+      <a class="social" href="https://t.me/BeJuanitox" target="_blank">
+        <i class="fa-brands fa-telegram itemSocial itemTlg"></i>
+      </a>
+    </div>
+  </footer>
   <script src="https://kit.fontawesome.com/7851ea6f75.js" crossorigin="anonymous"></script>
   <script defer src="scripts.js"></script>
 </body>
