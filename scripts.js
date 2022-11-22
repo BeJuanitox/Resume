@@ -66,6 +66,6 @@ setInterval(() => {
 
 }, 80)
 
-function redirectButton() {
+const redirectButton = () => {
   location.href = "#start";
 }
