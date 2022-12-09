@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
 
 :root {
-  --bg-header: #006600;
-  --button: #92E27A;
+  --bg-header: #B72111;
+  --button: #F86D60;
   --bg: white;
-  --bg-start: #B4FF9A;
-  --bg-description: #92E27A;
-  --clr-border2: #01371d;
+  --bg-start: #FDC0AB;
+  --bg-description: #F86D60;
+  --clr-border2: #610509;
   --bg-progress: #A6A6A8;
   --bg-social: #CDCDCD;
-  --bg-footer: #4ea93b;
+  --bg-footer: #F42D2D;
 }
 
 body {
