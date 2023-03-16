@@ -41,7 +41,7 @@ html {
 .headerPicture {
   border-radius: 18px;
   border: 10px solid var(--clr-border2);
-  width: 250px;
+  width: 300px;
 }
 
 .headerDescription {
@@ -73,17 +73,20 @@ button:hover {
   width: 100%;
   height: 100vh;
   background: var(--bg-start);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .picture {
-  margin-top: 40px;
-  margin-left: 100px;
+  margin-left: 50px;
   width: 250px;
   border-radius: 18px;
   border: 8px solid var(--clr-border2);
 }
 
 .titleProfile,
+.titleAbout,
 .title {
   font-size: 30px;
 }
@@ -91,48 +94,49 @@ button:hover {
 .nameProfile {
   font-size: 25px;
   margin-top: 5px;
-  margin-left: 120px;
+  margin-left: 72px;
+}
+
+.descriptionProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
 .titleAbout {
   text-align: center;
   color: black;
+  margin: 0 auto;
 }
-
 
 .about {
   background: var(--bg-description);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   border-radius: 18px;
   border: 6px solid var(--clr-border2);
-  width: 550px;
-  margin: 5px auto;
+  width: 620px;
+  height: 165px;
 }
 
 .description {
   text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding: 10px;
+  margin: 0 auto;
 }
 
 .complement {
   display: flex;
-  flex-wrap: wrap;
   justify-content: end;
 }
 
 .imgabout {
-  margin-right: 60px;
-  width: 250px;
-  border-radius: 18px;
+  margin-right: 50px;
+  width: 230px;
 }
 
 .title {
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 25px;
   color: black;
   font-weight: 600;
 }
@@ -290,7 +294,17 @@ svg {
   margin-bottom: 150px;
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 55%;
+  justify-content: space-between;
+}
+
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   width: 250px;
   margin: 20px auto;
@@ -310,13 +324,8 @@ svg {
   border-radius: 5px;
 }
 
-.name {
-  margin: 5px auto;
-}
-
-.texts {
-  margin: 10px auto;
-  margin-bottom: 5px;
+.name, .texts {
+  margin: 0 auto;
 }
 
 .links {
@@ -341,10 +350,17 @@ svg {
 
 footer {
   background: var(--bg-footer);
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .footer {
-  margin: 50px 500px 100px 500px;
+  width: 50%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -352,9 +368,6 @@ footer {
 }
 
 .titleContact {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 25px;
   color: white;
   font-weight: 500;
 }
@@ -392,252 +405,104 @@ footer {
   color: #2AB9F2;
 }
 
-@media (max-width: 1505px) {
+@media (max-width: 1160px) {
   .picture {
-    width: 230px;
+    width: 180px;
   }
   .nameProfile {
-    font-size: 25px;
+    font-size: 20px;
+    margin-left: 5%;
   }
   .titleAbout {
-    margin-top: 0px;
-    margin-bottom: 8px;
     font-size: 25px;
   }
   .about {
-    height: 145px;
-    width: 500px;
-    font-size: 13px;
+    width: 475px;
+    height: 130px;
   }
-  .imgabout {
-    margin-top: 25px;
-    width: 200px;
+  .description {
+    font-size: 18px;
   }
-  .footer {
-    margin-left: 390px;
-    width: 50%;
-  }
-}
-
-@media (max-width: 1315px) {
-  .footer {
-    margin-left: 340px;
-  }
-}
-
-@media (max-width: 1280px) {
-  .picture {
-    width: 200px;
-  }
-  .nameProfile {
-    font-size: 22px;
-  }
-  .titleAbout {
-    margin-top: 0px;
-    margin-bottom: 8px;
-    font-size: 23px;
-  }
-  .about {
-    height: 150px;
-    width: 464px;
-    font-size: 12px;
-  }
-  .imgabout {
-    margin-top: 25px;
-    width: 200px;
+  .imgabout{
+    width: 150px;
   }
   .footer {
-    margin-left: 390px;
-    width: 500px;
+    width: 90%;
   }
 }
-
-@media (max-width: 1205px) {
-  .footer {
-    margin-left: 360px;
-  }
-}
-
-@media (max-width: 1170px) {
-  .footer {
-    margin-left: 320px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .headerPicture {
-    width: 200px;
-  }
-  .headerDescription {
-    font-size: 26px;
-  }
-}
-
-@media (max-width: 1075px) {
-  .footer {
-    margin-left: 300px;
-  }
-}
-
-@media (max-width: 1045px) {
-  .footer {
-    margin-left: 275px;
-  }
-}
-
+ 
 @media (max-width: 1039px) {
-  .progress {
-    width: 600px;
+  .progress{
+    height: 600px;
   }
 }
 
-@media (max-width: 987px) {
-  .title, .titleContact {
-    font-size: 25px;
-  }
-  .footer {
-    margin-left: 250px;
-  }
-  .itemSocial {
+@media (max-width: 850px) {
+  .itemSocial{
     font-size: 45px;
     margin: 15px;
   }
 }
 
-@media (max-width: 946px) {
-  .footer {
-    margin-left: 230px;
+@media (max-width: 770px) {
+  .headerPicture {
+    width: 200px;
   }
-}
-
-@media (max-width: 900px) {
-  .footer {
-    margin-left: 200px;
-  }
-}
-
-@media (max-width: 865px) {
-  .footer {
-    margin-left: 190px;
-  }
-}
-
-@media (max-width: 840px) {
-  .footer {
-    margin-left: 170px;
-  }
-}
-
-@media (max-width: 800px) {
-  .profile {
-    margin-left: 190px;
-  }
-  .descriptionProfile {
-    margin-top: 30px;    
-  }
-  .complement {
-    margin-top: 20px;
-    justify-content: center;
-    margin-left: 80px;
-  }
-  .footer {
-    margin-left: 170px;
-  }
-}
-
-@media (max-width: 790px) {
-  .footer {
-    margin-left: 150px;
-  }
-}
-
-@media (max-width: 790px) {
-  .profile {
-    margin-left: 170px;
-  }
-  .footer {
-    margin-left: 140px;
-  }
-}
-
-@media (max-width: 740px) {
-  .profile {
-    margin-left: 155px;
-  }
-  .footer {
-    margin-left: 130px;
-  }
-}
-
-@media (max-width: 720px) {
   .headerDescription {
-    font-size: 20px;
+    font-size: 25px;
+    width: 70%;
   }
-  .profile {
-    margin-left: 145px;
+  .infoAbout {
+    align-items: center;
   }
   .picture {
-    width: 150px;
-    margin-left: 125px;
-  }
-  .nameProfile {
-    font-size: 20px;
-  }
-  .titleAbout {
-    margin-top: 60px;
-    margin-bottom: 8px;
-    font-size: 20px;
-  }
-  .about {
-    height: 120px;
-    width: 430px;
-    font-size: 11px;
+    margin: 0px;
   }
   .imgabout {
-    margin-top: 70px;
-    width: 160px;
-  }
-  .footer {
-    margin-left: 120px;
+    margin-right: 0px;
   }
 }
 
-@media (max-width: 700px) {
-  .footer {
-    margin-left: 100px;
+@media (max-width: 680px) {
+  .progress{
+    width: 70%;
   }
 }
 
-@media (max-width: 675px) {
-  .profile {
-    margin-left: 125px;
+@media (max-width: 540px) {
+  .about{
+    width: 400px;
+    height: 160px;
   }
 }
 
-@media (max-width: 655px) {
-  .progress {
-    width: 450px;
-    height: 600px;
+@media (max-width: 486px) {
+  .about{
+    width: 350px;
+    height: 190px;
   }
-  .footer {
-    margin-left: 80px;
-  }
-}
-
-@media (max-width: 640px) {
-  .profile {
-    margin-left: 110px;
-  }
-  .footer {
-    margin-left: 65px;
+  .progress{
+    width: 100%;
   }
 }
 
-@media (max-width: 610px) {
-  .profile {
-    margin-left: 98px;
+@media (max-width: 390px) {
+  .about{
+    width: 270px;
+    height: 250px;
   }
-  .footer {
-    margin-left: 60px;
+}
+
+@media (max-width: 340px) {
+  .progress{
+    height: 1100px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 310px) {
+  .about{
+    width: 225px;
+    height: 280px;
   }
 }
