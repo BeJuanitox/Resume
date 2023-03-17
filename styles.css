@@ -433,6 +433,7 @@ footer {
  
 @media (max-width: 1039px) {
   .progress{
+    width: 100%;
     height: 600px;
   }
 }
@@ -455,41 +456,16 @@ footer {
   .infoAbout {
     align-items: center;
   }
-  .picture {
+  .picture, .imgabout {
     margin: 0px;
-  }
-  .imgabout {
-    margin-right: 0px;
-  }
-}
-
-@media (max-width: 680px) {
-  .progress{
-    width: 70%;
   }
 }
 
 @media (max-width: 540px) {
   .about{
-    width: 400px;
-    height: 160px;
-  }
-}
-
-@media (max-width: 486px) {
-  .about{
-    width: 350px;
-    height: 190px;
-  }
-  .progress{
-    width: 100%;
-  }
-}
-
-@media (max-width: 390px) {
-  .about{
-    width: 270px;
-    height: 250px;
+    width: 80%;
+    height: 165px;
+    overflow-y: scroll;
   }
 }
 
@@ -497,12 +473,5 @@ footer {
   .progress{
     height: 1100px;
     margin: 0 auto;
-  }
-}
-
-@media (max-width: 310px) {
-  .about{
-    width: 225px;
-    height: 280px;
   }
 }
