@@ -41,7 +41,7 @@ html {
 .headerPicture {
   border-radius: 18px;
   border: 10px solid var(--clr-border2);
-  width: 250px;
+  width: 300px;
 }
 
 .headerDescription {
@@ -73,17 +73,20 @@ button:hover {
   width: 100%;
   height: 100vh;
   background: var(--bg-start);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .picture {
-  margin-top: 40px;
-  margin-left: 100px;
+  margin-left: 50px;
   width: 250px;
   border-radius: 18px;
   border: 8px solid var(--clr-border2);
 }
 
 .titleProfile,
+.titleAbout,
 .title {
   font-size: 30px;
 }
@@ -91,48 +94,49 @@ button:hover {
 .nameProfile {
   font-size: 25px;
   margin-top: 5px;
-  margin-left: 120px;
+  margin-left: 72px;
+}
+
+.descriptionProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
 .titleAbout {
   text-align: center;
   color: black;
+  margin: 0 auto;
 }
-
 
 .about {
   background: var(--bg-description);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   border-radius: 18px;
   border: 6px solid var(--clr-border2);
-  width: 550px;
-  margin: 5px auto;
+  width: 620px;
+  height: 165px;
 }
 
 .description {
   text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding: 10px;
+  margin: 0 auto;
 }
 
 .complement {
   display: flex;
-  flex-wrap: wrap;
   justify-content: end;
 }
 
 .imgabout {
-  margin-right: 60px;
-  width: 250px;
-  border-radius: 18px;
+  margin-right: 50px;
+  width: 230px;
 }
 
 .title {
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 25px;
   color: black;
   font-weight: 600;
 }
@@ -290,7 +294,17 @@ svg {
   margin-bottom: 150px;
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 55%;
+  justify-content: space-between;
+}
+
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   width: 250px;
   margin: 20px auto;
@@ -310,13 +324,8 @@ svg {
   border-radius: 5px;
 }
 
-.name {
-  margin: 5px auto;
-}
-
-.texts {
-  margin: 10px auto;
-  margin-bottom: 5px;
+.name, .texts {
+  margin: 0 auto;
 }
 
 .links {
@@ -341,10 +350,17 @@ svg {
 
 footer {
   background: var(--bg-footer);
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .footer {
-  margin: 50px 500px 100px 500px;
+  width: 50%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -352,9 +368,6 @@ footer {
 }
 
 .titleContact {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 25px;
   color: white;
   font-weight: 500;
 }
@@ -390,4 +403,75 @@ footer {
 
 .itemTlg {
   color: #2AB9F2;
+}
+
+@media (max-width: 1160px) {
+  .picture {
+    width: 180px;
+  }
+  .nameProfile {
+    font-size: 20px;
+    margin-left: 5%;
+  }
+  .titleAbout {
+    font-size: 25px;
+  }
+  .about {
+    width: 475px;
+    height: 130px;
+  }
+  .description {
+    font-size: 18px;
+  }
+  .imgabout{
+    width: 150px;
+  }
+  .footer {
+    width: 90%;
+  }
+}
+ 
+@media (max-width: 1039px) {
+  .progress{
+    width: 100%;
+    height: 600px;
+  }
+}
+
+@media (max-width: 850px) {
+  .itemSocial{
+    font-size: 45px;
+    margin: 15px;
+  }
+}
+
+@media (max-width: 770px) {
+  .headerPicture {
+    width: 200px;
+  }
+  .headerDescription {
+    font-size: 25px;
+    width: 70%;
+  }
+  .infoAbout {
+    align-items: center;
+  }
+  .picture, .imgabout {
+    margin: 0px;
+  }
+}
+
+@media (max-width: 540px) {
+  .about{
+    width: 80%;
+    height: 165px;
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 340px) {
+  .progress{
+    height: 1100px;
+    margin: 0 auto;
+  }
 }
