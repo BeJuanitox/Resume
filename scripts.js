@@ -7,34 +7,34 @@ let java = document.getElementById('java');
 let counterang = 0, counterhtml = 0, countercss = 0, counterjs = 0, counterc = 0, counterjava = 0;
 
 setInterval(() => {
-  if (counterang === 5) {
+  if (counterang === 15) {
     clearInterval;
   } else {
     counterang++;
     angular.innerHTML = `${counterang}%`;
   }
 
-}, 100)
+}, 35)
 
 setInterval(() => {
-  if (counterhtml === 30) {
+  if (counterhtml === 50) {
     clearInterval;
   } else {
     counterhtml++;
     html.innerHTML = `${counterhtml}%`;
   }
 
-}, 65)
+}, 40)
 
 setInterval(() => {
-  if (countercss === 30) {
+  if (countercss === 40) {
     clearInterval;
   } else {
     countercss++;
     css.innerHTML = `${countercss}%`;
   }
 
-}, 65)
+}, 50)
 
 setInterval(() => {
   if (counterjs === 10) {

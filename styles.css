@@ -240,21 +240,23 @@ button:hover {
   animation: animjava 2s linear forwards;
 }
 
+/* Progreso porcentaje en calculadora chrome: 450 - 450 * 0.10 <- porcentaje */
+
 @keyframes animang {
   100% {
-    stroke-dashoffset: 427.5;
+    stroke-dashoffset: 382;
   }
 }
 
 @keyframes animhtml {
   100% {
-    stroke-dashoffset: 315;
+    stroke-dashoffset: 225;
   }
 }
 
 @keyframes animcss {
   100% {
-    stroke-dashoffset: 315;
+    stroke-dashoffset: 270;
   }
 }
 
