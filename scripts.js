@@ -4,7 +4,8 @@ let css = document.getElementById('css');
 let js = document.getElementById('js');
 let c = document.getElementById('c');
 let java = document.getElementById('java');
-let counterang = 0, counterhtml = 0, countercss = 0, counterjs = 0, counterc = 0, counterjava = 0;
+let firebase = document.getElementById('firebase');
+let counterang = 0, counterhtml = 0, countercss = 0, counterjs = 0, counterc = 0, counterjava = 0, counterfireb = 0;
 
 setInterval(() => {
   if (counterang === 15) {
@@ -65,6 +66,16 @@ setInterval(() => {
   }
 
 }, 80)
+
+setInterval(() => {
+  if (counterfireb === 5) {
+    clearInterval;
+  } else {
+    counterfireb++;
+    firebase.innerHTML = `${counterfireb}%`;
+  }
+
+}, 350)
 
 const redirectButton = () => {
   location.href = "#start";
