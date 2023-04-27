@@ -390,7 +390,7 @@ footer {
 .social {
   border: 2px solid var(--clr-border2);
   border-radius: 50px;
-  background: var(--bg-social);
+  background: var(--bg);
 }
 
 .itemSocial:hover {
