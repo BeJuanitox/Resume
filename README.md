@@ -1,4 +1,6 @@
-# Resume
+<h1 align="center"> Hey there, here you can find my resume with my projects </h1>
+
+## Resume
 Juan Sebastián Morales Cano
 
 ## Nickname
